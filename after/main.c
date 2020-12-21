@@ -17,22 +17,18 @@ void dysj(int d)//打印等腰三角形
 	n();
   在考虑打印第二行
   	pline(d-1,' ');
-  	pline(2,'*');
+  	pline(3,'*');
 	n();
   此时已经可以归纳出后续代码
 */
-	for(int i=1;i<=d;i++)
+	for(int i=0;i<d;i++)
 	{
-		pline(d-i,' ');
-		pline(i,'*');
+		pline(d-i-1,' ');
+		pline(1+i*2,'*');
 		n();
 	}
 }
 int main()
 {
-	pline(5,'*');
-	n();
-	printf("hello world");
-	n();
 	dysj(6);
 }
